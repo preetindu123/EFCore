@@ -76,5 +76,21 @@ namespace WebApp.NunitTest
             var model = result.Model as Product;
             Assert.AreEqual(Id, model.Id);
         }
+
+        [Test]
+        public void TestDeleteGet()
+        {
+            int Id = 1;
+            A.CallTo(() => uow.ProductRepo.GetAll()).Returns(ProductList);
+            var productsInit = uow.ProductRepo.GetAll();
+            var product = ProductList.FirstOrDefault(x => x.Id == Id);
+            Assert.That(productsInit, Does.Contain(product));
+            A.CallTo(() => uow.ProductRepo.FindById(Id))
+           .Returns(product);
+            var result = ctrl.Delete(Id) as ViewResult;
+            A.CallTo(() => uow.ProductRepo.DeleteById(Id)).MustHaveHappened();
+            //var products = uow.ProductRepo.GetAll();
+            //Assert.That(products, Does.Not.Contain(product));
+        }          
     }
 }

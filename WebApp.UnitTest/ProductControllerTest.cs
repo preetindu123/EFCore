@@ -5,6 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Repository.UOW;
 using System.Collections.Generic;
+using System.Linq;
 using WebApp.Controllers;
 using WebApp.UnitTest.Factories;
 
@@ -68,5 +69,23 @@ namespace WebApp.UnitTest
             var model = result.Model as Product;            
             Assert.AreEqual(Id, model.Id);
         }
+
+        //[TestMethod]
+        //public void TestDeleteGet()
+        //{
+        //    int Id = 1;
+        //    var _uow = new Mock<IUnitOfWork>();
+        //    var _ctrl = new Mock<ProductController>(_uow);
+
+        //    _uow.Setup(u => u.CategoryRepo.GetAll()).Returns(CategoryList);
+        //    _uow.Setup(u => u.ProductRepo.GetAll()).Returns(ProductList);
+        //    _uow.Setup(u => u.ProductRepo.FindById(Id)).Returns((object id) =>
+        //    {
+        //        return ProductList.Find(p => p.Id == (int)id);
+        //    });
+        //    var result = _ctrl.d(Id) as ViewResult;
+        //    _ctrl.Verify(mock => mock.Delete(Id), Times.Once());
+           
+        //}       
     }
 }
