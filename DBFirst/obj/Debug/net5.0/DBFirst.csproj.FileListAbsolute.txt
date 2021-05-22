@@ -1,0 +1,12 @@
+D:\Study\ASP.NET CORE\EFCore\DBFirst\bin\Debug\net5.0\DBFirst.deps.json
+D:\Study\ASP.NET CORE\EFCore\DBFirst\bin\Debug\net5.0\DBFirst.dll
+D:\Study\ASP.NET CORE\EFCore\DBFirst\bin\Debug\net5.0\ref\DBFirst.dll
+D:\Study\ASP.NET CORE\EFCore\DBFirst\bin\Debug\net5.0\DBFirst.pdb
+D:\Study\ASP.NET CORE\EFCore\DBFirst\obj\Debug\net5.0\DBFirst.csprojAssemblyReference.cache
+D:\Study\ASP.NET CORE\EFCore\DBFirst\obj\Debug\net5.0\DBFirst.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\ASP.NET CORE\EFCore\DBFirst\obj\Debug\net5.0\DBFirst.AssemblyInfoInputs.cache
+D:\Study\ASP.NET CORE\EFCore\DBFirst\obj\Debug\net5.0\DBFirst.AssemblyInfo.cs
+D:\Study\ASP.NET CORE\EFCore\DBFirst\obj\Debug\net5.0\DBFirst.csproj.CoreCompileInputs.cache
+D:\Study\ASP.NET CORE\EFCore\DBFirst\obj\Debug\net5.0\DBFirst.dll
+D:\Study\ASP.NET CORE\EFCore\DBFirst\obj\Debug\net5.0\ref\DBFirst.dll
+D:\Study\ASP.NET CORE\EFCore\DBFirst\obj\Debug\net5.0\DBFirst.pdb

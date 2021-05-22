@@ -1,0 +1,17 @@
+D:\Study\ASP.NET CORE\EFCore\Repository\bin\Debug\net5.0\Repository.deps.json
+D:\Study\ASP.NET CORE\EFCore\Repository\bin\Debug\net5.0\Repository.dll
+D:\Study\ASP.NET CORE\EFCore\Repository\bin\Debug\net5.0\ref\Repository.dll
+D:\Study\ASP.NET CORE\EFCore\Repository\bin\Debug\net5.0\Repository.pdb
+D:\Study\ASP.NET CORE\EFCore\Repository\bin\Debug\net5.0\DomainModels.dll
+D:\Study\ASP.NET CORE\EFCore\Repository\bin\Debug\net5.0\DomainModels.pdb
+D:\Study\ASP.NET CORE\EFCore\Repository\obj\Debug\net5.0\Repository.csprojAssemblyReference.cache
+D:\Study\ASP.NET CORE\EFCore\Repository\obj\Debug\net5.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\ASP.NET CORE\EFCore\Repository\obj\Debug\net5.0\Repository.AssemblyInfoInputs.cache
+D:\Study\ASP.NET CORE\EFCore\Repository\obj\Debug\net5.0\Repository.AssemblyInfo.cs
+D:\Study\ASP.NET CORE\EFCore\Repository\obj\Debug\net5.0\Repository.csproj.CoreCompileInputs.cache
+D:\Study\ASP.NET CORE\EFCore\Repository\obj\Debug\net5.0\Repository.csproj.CopyComplete
+D:\Study\ASP.NET CORE\EFCore\Repository\obj\Debug\net5.0\Repository.dll
+D:\Study\ASP.NET CORE\EFCore\Repository\obj\Debug\net5.0\ref\Repository.dll
+D:\Study\ASP.NET CORE\EFCore\Repository\obj\Debug\net5.0\Repository.pdb
+D:\Study\ASP.NET CORE\EFCore\Repository\bin\Debug\net5.0\DAL.dll
+D:\Study\ASP.NET CORE\EFCore\Repository\bin\Debug\net5.0\DAL.pdb
