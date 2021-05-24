@@ -21,10 +21,13 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<ProductModel> GetProducts()
+        public IEnumerable<ProductModel> GetProducts(int apiversion = 1)
         {
+            if(apiversion == 2)
+                return _uow.ProductRepo.GetAllProducts();  //OK:200
             return _uow.ProductRepo.GetAllProducts(); //OK:200
-        }       
+
+        }
 
         [HttpGet("{id}")]
         public ActionResult<Product> GetProduct(int id)
@@ -59,7 +62,7 @@ namespace WebAPI.Controllers
                 _uow.SaveChanges();
                 return Ok();
             }
-            catch (Exception ex)
+            catch
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
@@ -74,7 +77,7 @@ namespace WebAPI.Controllers
                 _uow.SaveChanges();
                 return Ok();
             }
-            catch (Exception ex)
+            catch
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }

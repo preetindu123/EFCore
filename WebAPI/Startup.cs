@@ -34,7 +34,13 @@ namespace WebAPI
                 options.UseSqlServer(cn);
             });
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddControllers();
+            //services.AddControllers();//replace this for using Pascal Case in consumer. 
+            services.AddControllers().AddJsonOptions(o =>
+            {
+                o.JsonSerializerOptions.PropertyNamingPolicy = null;
+            });
+              //  .AddXmlSerializerFormatters()//this needs to be added for to override  serialization from Json(which is by default) to XML
+              //.AddXmlDataContractSerializerFormatters();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPI", Version = "v1" });

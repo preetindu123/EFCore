@@ -11,9 +11,11 @@ namespace WebApp
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        private IWebHostEnvironment _env;
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
             Configuration = configuration;
+            _env = env;
         }
 
         public IConfiguration Configuration { get; }
@@ -27,7 +29,13 @@ namespace WebApp
                 options.UseSqlServer(cn);                
             });
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddControllersWithViews();
+            //services.AddControllersWithViews(); replace this with below code to enable runtime compilation
+            //add nuget package Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
+            var builder = services.AddControllersWithViews();
+            if (_env.IsDevelopment())
+            {
+                builder.AddRazorRuntimeCompilation();
+            }
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
